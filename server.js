@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const rateLimit = require("express-rate-limit");
 const connectDB = require("./config/db");
 const scrapeRoutes = require("./routes/scrapeRoutes");
-const queryRoutes = require("./routes/queryRoutes");
+const queryRoutes = require("./routes/queryRoutes")
 
 dotenv.config();
 const app = express();
@@ -33,7 +33,7 @@ app.use(limiter);
 
 // Routes
 app.use("/", scrapeRoutes);
-app.use("/",queryRoutes)
+app.use("/",queryRoutes);
 
 // Start server
 app.listen(PORT, () =>
