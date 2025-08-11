@@ -33,7 +33,6 @@ app.use(limiter);
 
 // Routes
 app.use("/", scrapeRoutes);
-app.use("/",queryRoutes);
 
 // Start server
 app.listen(PORT, () =>
